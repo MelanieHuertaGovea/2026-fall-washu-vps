@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dumpling Plus</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 25px;
+            background-color: rgb(61, 70, 48);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        .header {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 55px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 10px;
+        }
+
+        .header img {
+            width: 65%;
+            height: 300px;
+            object-fit: cover;
+            margin: 20px;
+        }
+
+        .intro {
+            font-size: 14px;
+            line-height: 1.8;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 40px 0 20px;
+        }
+
+
+        /* GRID */
+
+        .menu-grid {
+            width: 90%;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 18px;
+        }
+
+
+        /* MENU BOXES */
+
+        .menu-section {
+            padding: 15px;
+            border: 1px solid white;
+        }
+
+        .menu-section img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid white;
+        }
+
+
+        /* FLEXBOX */
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            font-size: 12px;
+            line-height: 1.4;
+
+            padding: 8px 2px;
+            border-bottom: 1px solid white;
+        }
+
+        .item {
+            text-align: left;
+            padding-right: 8px;
+        }
+
+        .price {
+            text-align: right;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 11px;
+            font-style: italic;
+            margin: 5px;
+        }
+
+
+      
+
+        .information {
+            width: 80%;
+            margin: 50px auto 20px;
+            padding: 25px;
+            text-align: center;
+            border-top: 1px solid white;
+        }
+
+        .information h2 {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .information p {
+            font-size: 13px;
+            margin: 5px;
+        }
+
+        a {
+            color: white;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .menu-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .header img {
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .header img {
+                width: 95%;
+                height: 220px;
+                margin: 10px;
+            }
+
+            .intro {
+                width: 90%;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+                width: 95%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>Dumpling Plus</h1>
+
+        <img src="restaurantpic.png">
+
+        <p class="intro">
+            Welcome to Dumpling Plus!<br>
+            Dumpling Plus brings authentic Chinese flavors to University City,
+            serving delicious dumplings, noodles, rice dishes, and traditional
+            favorites made for sharing.
+        </p>
+
+        <p class="intro">
+            Dumpling Plus 位于 University City，为您提供美味的中式饺子、面食、米饭及各式经典佳肴，传递传统中国风味
+        </p>
+
+    </div>
+
+
+    <h2>Menu 餐厅菜单</h2>
+
+
+    <!-- MENU GRID -->
+
+    <div class="menu-grid">
+
+
+        <!-- APPETIZERS -->
+
+        <div class="menu-section">
+
+            <img src="cucumbersalad.png">
+
+            <div class="section-title">
+                Appetizers 开胃菜
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Cucumber Salad | 凉拌黄瓜</span>
+                <span class="price">$8.50</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Seaweed Salad | 中华海藻</span>
+                <span class="price">$7.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Spring Rolls (3) | 春卷</span>
+                <span class="price">$5.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Fried Chicken Wings (5) | 炸鸡翅</span>
+                <span class="price">$5.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Crab Ragoons (4) | 蟹角</span>
+                <span class="price">$6.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Fried Pork Chop | 炸猪排</span>
+                <span class="price">$9.45</span>
+            </div>
+
+        </div>
+
+
+        <!-- GREENS -->
+
+        <div class="menu-section">
+
+            <div class="section-title">
+                Greens 青菜
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Bok Choy with Garlic | 蒜蓉上海青</span>
+                <span class="price">$12.00</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Broccoli with Garlic | 蒜蓉西兰花</span>
+                <span class="price">$12.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Cabbage with Garlic | 蒜蓉大头菜</span>
+                <span class="price">$13.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Green Beans with Garlic Sauce | 鱼香四季豆</span>
+                <span class="price">$12.99</span>
+            </div>
+
+        </div>
+
+
+        <!-- SOUPS -->
+
+        <div class="menu-section">
+
+            <img src="soups.png">
+
+            <div class="section-title">
+                Soups 汤
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pork Wonton Soup | 鲜肉馄饨汤</span>
+                <span class="price">$6.50</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Shrimp Wonton Soup | 鲜虾云吞汤</span>
+                <span class="price">$7.50</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Hot Sour Soup | 酸辣汤</span>
+                <span class="price">$5.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">House Steamed Chicken Soup | 招牌原汁汽锅鸡</span>
+                <span class="price">$8.95</span>
+            </div>
+
+        </div>
+
+
+        <!-- NOODLES -->
+
+        <div class="menu-section">
+
+            <img src="noodles.png">
+
+            <div class="section-title">
+                Noodles 面
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Braised Beef Noodle Soup | 红烧牛肉面</span>
+                <span class="price">$14.75</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Noodle Soup | 鸡汤面</span>
+                <span class="price">$14.75</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Fried Pork Chop Noodle Soup | 排骨面</span>
+                <span class="price">$14.75</span>
+            </div>
+
+        </div>
+
+
+        <!-- CHOW MEIN -->
+
+        <div class="menu-section">
+
+            <img src="chowmein.png">
+
+            <div class="section-title">
+                Chow Mein 炒面
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Chow Mein | 鸡炒面</span>
+                <span class="price">$12.75</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Beef Chow Mein | 牛肉炒面</span>
+                <span class="price">$13.75</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Shrimp Chow Mein | 虾仁炒面</span>
+                <span class="price">$13.75</span>
+            </div>
+
+        </div>
+
+
+        <!-- FRIED RICE -->
+
+        <div class="menu-section">
+
+            <img src="friedrice.png">
+
+            <div class="section-title">
+                Fried Rice / Rice Cake | 炒年糕
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Fried Rice | 鸡肉炒饭</span>
+                <span class="price">$12.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Beef Fried Rice | 牛肉炒饭</span>
+                <span class="price">$13.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Shrimp Fried Rice | 虾仁炒饭</span>
+                <span class="price">$13.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Shrimp Beef Rice Cake | 鸡肉虾仁牛肉炒年糕</span>
+                <span class="price">$16.99</span>
+            </div>
+
+        </div>
+
+
+        <!-- DIM SUM -->
+
+        <div class="menu-section">
+
+            <img src="dimsum.png">
+
+            <div class="section-title">
+                Signature Dim Sum 招牌点心
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pork Buns (6) | 包子</span>
+                <span class="price">$9.29</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Buns (6) | 鸡肉包</span>
+                <span class="price">$9.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Glutinous Rice Siu Mai (4) | 糯米烧卖</span>
+                <span class="price">$6.50</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pork Siu Mai (4) | 猪肉烧卖</span>
+                <span class="price">$6.95</span>
+            </div>
+
+        </div>
+
+
+        <!-- DUMPLINGS -->
+
+        <div class="menu-section">
+
+            <img src="dumplings.png">
+
+            <div class="section-title">
+                Dumplings 饺子
+            </div>
+
+            <p class="description">
+                Steamed or Pan Fried 蒸或煎
+            </p>
+
+            <div class="menu-item">
+                <span class="item">Vegetable Dumplings (8) | 素饺子</span>
+                <span class="price">$10.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Dumplings (8) | 鸡肉饺子</span>
+                <span class="price">$11.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pork Shrimp Veg Dumplings (8) | 猪肉虾仁蔬菜水饺</span>
+                <span class="price">$11.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Beef Dumplings (8) | 牛肉饺子</span>
+                <span class="price">$12.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Rainbow Dumplings (8) | 彩虹饺子</span>
+                <span class="price">$13.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Mini Pan Fried Buns (10) | 小煎包</span>
+                <span class="price">$11.99</span>
+            </div>
+
+        </div>
+
+
+        <!-- SOUP DUMPLINGS -->
+
+        <div class="menu-section">
+
+            <img src="steamedSoupdumplings.png">
+
+            <div class="section-title">
+                Steamed Soup Dumplings 小笼包
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Happy Six Soup Dumplings (6) | 开心六运汤包</span>
+                <span class="price">$12.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pork Soup Dumplings (6) | 小笼包</span>
+                <span class="price">$10.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Crab Meat & Pork Soup Dumplings (6) | 蟹粉小笼包</span>
+                <span class="price">$13.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Black Truffle Pork Soup Dumplings (6) | 黑松露猪肉小笼包</span>
+                <span class="price">$15.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chicken Soup Dumplings (6) | 雞肉小籠包</span>
+                <span class="price">$10.99</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Mala Pork Soup Dumplings (6) | 麻辣猪肉小笼包</span>
+                <span class="price">$11.50</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Shrimp & Pork Soup Dumplings (6) | 虾仁猪肉小笼包</span>
+                <span class="price">$13.50</span>
+            </div>
+
+        </div>
+
+
+        <!-- SNACKS -->
+
+        <div class="menu-section">
+
+            <img src="snacks.png">
+
+            <div class="section-title">
+                Snacks 零食
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Hot Soy Bean Milk | 热豆浆</span>
+                <span class="price">$3.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Iced Soy Bean Milk | 冰豆浆</span>
+                <span class="price">$3.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Crispy Doughnut (1) | 油条</span>
+                <span class="price">$2.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Fried Cheese Chives Box | 炸芝士韭菜盒子</span>
+                <span class="price">$7.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Scallion Pancake | 葱油饼</span>
+                <span class="price">$6.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Chinese Beef Wrap | 牛肉卷饼</span>
+                <span class="price">$9.95</span>
+            </div>
+
+        </div>
+
+
+        <!-- DESSERT -->
+
+        <div class="menu-section">
+
+            <img src="dessert.png">
+
+            <div class="section-title">
+                Dessert | 甜点
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Pumpkin Cake (4) | 南瓜饼</span>
+                <span class="price">$5.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Durian Puff (3) | 榴莲泡芙</span>
+                <span class="price">$7.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Cheese Beef Wrap | 芝士牛肉卷</span>
+                <span class="price">$7.95</span>
+            </div>
+
+            <div class="menu-item">
+                <span class="item">Taro Soup Dumplings | 芋泥小笼包</span>
+                <span class="price">$11.95</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="information">
+
+        <h2>Information</h2>
+
+        <p>Sun - Thu: 11am - 9pm</p>
+
+        <p>Fri - Sat: 11am - 10pm</p>
+
+        <p>
+            <a href="https://www.google.com/maps">
+                6335 Delmar Blvd, University City
+            </a>
+        </p>
+
+        <p>Contact Us: 314-802-7500</p>
+
+    </div>
+
+
+</body>
+
+</html>
